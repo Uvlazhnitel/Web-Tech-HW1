@@ -14,32 +14,32 @@
     <div class="container">
       <div class="row">
       <!-- Navbar -->
-      <nav>
+      <nav class="navbar navbar-expand-lg bg-white position-sticky top-0">
       <ul class="nav nav-pills">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">History</a>
+          <a class="nav-link" href="#history">History</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Trademark</a>
+          <a class="nav-link" href="#trademark">Trademark</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " aria-disabled="true">Website client-side usage</a>
+          <a class="nav-link " aria-disabled="true" href="#website">Website client-side usage</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-disabled="true">Features</a>
+          <a class="nav-link" aria-disabled="true" href="#features">Features</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#syntax" role="button" aria-expanded="false">Syntax</a>
           <ul class="dropdown-menu">
-            <li><a class="nav-link" href="#" role="button" aria-expanded="false">Simple examples</a></li>
+            <li><a class="nav-link" href="#examples" role="button" aria-expanded="false">Simple examples</a></li>
             <li><a class="nav-link"  href="#">More advanced examples</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-disabled="true">Sources</a>
+          <a class="nav-link" aria-disabled="true" href="#sources">Sources</a>
         </li>
       </ul>
       
@@ -54,13 +54,13 @@
               <footer class="blockquote-footer">Douglas Crockford</footer>
             </blockquote>
             <section id="home">
-              <p><strong>JavaScript</strong>, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.</p>
+              <p class="fw-lighter fs-5"><strong>JavaScript</strong>, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.</p>
               <p>JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard. It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).</p>
               <p>The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O.</p>
               <p>JavaScript engines were originally used only in web browsers, but are now core components of some servers and a variety of applications. The most popular runtime system for this usage is Node.js.</p>
               <p>Although Java and JavaScript are similar in name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design.</p>
           </section>
-          <h1>History</h1>
+          <h1 id="history">History</h1>
           <hr>
           <h2>Creation at Netscape</h2>
               <p>The first popular web browser with a graphical user interface, Mosaic, was released in 1993. Accessible to non-technical people, it played a prominent role in the rapid growth of the nascent World Wide Web. The lead developers of Mosaic then founded the Netscape corporation, which released a more polished browser, Netscape Navigator, in 1994. This quickly became the most-used.</p>
@@ -85,11 +85,11 @@
 
               <p>Microsoft initially participated in the standards process and implemented some proposals in its JScript language, but eventually it stopped collaborating on Ecma work. Thus ECMAScript 4 was mothballed.</p>
 
-          <h1>Trademark</h1>
+          <h1 id="trademark">Trademark</h1>
           <p>"JavaScript" is a trademark of Oracle Corporation in the United States. The trademark was originally issued to Sun Microsystems on 6 May 1997, and was transferred to Oracle when they acquired Sun in 2009.</p>
           <hr>
 
-          <h1>Website client-side usage</h1>
+          <h1 id="website">Website client-side usage</h1>
           <p>JavaScript is the dominant client-side scripting language of the Web, with 98% of all websites (mid–2022) using it for this purpose.[39] Scripts are embedded in or included from HTML documents and interact with the DOM. All major web browsers have a built-in JavaScript engine that executes the code on the user's device.
           </p>
 
@@ -124,10 +124,10 @@
 
           <p>React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality.</p>
 
-          <h2>Angular</h2>
+          <h2 >Angular</h2>
           <p>Angular (also referred to as "Angular 2+")[48] is a TypeScript-based, free and open-source single-page web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.</p>
 
-          <h1>Features</h1>
+          <h1 id="features">Features</h1>
           <hr>
           <p>The following features are common to all conforming ECMAScript implementations unless explicitly specified otherwise.</p>
 
@@ -197,9 +197,9 @@
           </table>
           <p>Often also mentioned is <code>{} + []</code> resulting in 0 (number). This is misleading: the <code>{}</code> is interpreted as an empty code block instead of an empty object, and the empty array is cast to a number by the remaining unary + operator. If you wrap the expression in parentheses <code>({} + [])</code> the curly brackets are interpreted as an empty object and the result of the expression is <code>"[object Object]"</code> as expected.</p>
 
-          <h1>Syntax</h1>
+          <h1 id="syntax">Syntax</h1>
           <hr>
-          <h2>Simple examples</h2>
+          <h2 id="examples">Simple examples</h2>
           <p>Variables in JavaScript can be defined using either the var, let or const keywords. Variables defined without keywords will be defined at the global scope.</p>
 
             <pre class="border">
@@ -303,7 +303,7 @@
             // Euclidean algorithm:
             let a = Math.abs(this.a), b = Math.abs(this.b), t;
     
-            if (a <pre b) {
+            if (a < b) {
                 // swap variables
                 // t = b; b = a; a = t;
                 [a, b] = [b, a]; // swap using destructuring assignment (ES6)
@@ -371,56 +371,56 @@
     }
   </pre>
         
-The following output should be displayed in the browser window.
+        <p>The following output should be displayed in the browser window.</p>
 
+        <pre class="border">
 
     LCMCalculator: a = 28, b = 56, gcd = 28, lcm = 56
     LCMCalculator: a = 21, b = 56, gcd = 7, lcm = 168
     LCMCalculator: a = 25, b = 55, gcd = 5, lcm = 275
     LCMCalculator: a = 22, b = 58, gcd = 2, lcm = 638
+    </pre>
         
-Sources
-Dere, Mohan (2017-12-21). "How to integrate create-react-app with all the libraries you need to make a great app". freeCodeCamp. Retrieved 2018-06-14.
-Panchal, Krunal (2022-04-26). "Angular vs React Detailed Comparison". Groovy Web. Retrieved 2023-06-05.
-Author
-This homework was created by [put your name here].
-
-...
-Screenshot of JavaScript source code
-
-Paradigm
-Multi-paradigm: event-driven, functional, imperative, procedural, object-oriented programming
-Designed by
-Brendan Eich of Netscape initially; others have also contributed to the ECMAScript standard
-First appeared
-December 4, 1995; 27 years ago
-Stable release
-ECMAScript 2021 Edit this on Wikidata / June 2021; 2 years ago
-Preview release
-ECMAScript 2022 Edit this on Wikidata / 22 July 2021; 2 years ago
-Typing discipline
-Dynamic, weak, duck
-Filename extensions
-.js .cjs .mjs
-
-          
-
-
-          
-
-
-
-
+          <h2 id="sources">Sources</h2>
+          <hr>
+          <ul>
+          <li>Dere, Mohan (2017-12-21). <a href="url">How to integrate create-react-app with all the libraries you need to make a great app"</a>. freeCodeCamp. Retrieved 2018-06-14.
+          </li>
+          <li>Panchal, Krunal (2022-04-26). <a href="url">"Angular vs React Detailed Comparison"</a>. Groovy Web. Retrieved 2023-06-05.</li>
+          </ul>
+          <h1>Author</h1>
+          This homework was created by Iļja Junkins (ij23031).
         </div>
 
-        <div class="col-3"><img src="https://via.placeholder.com/150" alt="Placeholder Image" class="img-fluid">
-          </div>
+        <div class="col-3 border rounded"><img src="https://code.visualstudio.com/assets/docs/languages/javascript/auto-import-after.png" alt="JS code" class="img-fluid rounded-top">
+        <p>Screenshot of JavaScript source code</p>
+
+        <div class="col-10 mx-auto">
+            <strong>Paradigm</strong>
+            <p>Multi-paradigm: event-driven, functional, imperative, procedural, object-oriented programming</p>
+
+            <strong>Designed by</strong>
+            <p>Brendan Eich of Netscape initially; others have also contributed to the ECMAScript standard</p>
+
+            <strong>First appeared</strong>
+            <p>December 4, 1995; 27 years ago</p>
+
+            <strong>Stable release</strong>
+            <p>ECMAScript 2021 Edit this on Wikidata / June 2021; 2 years ago</p>
+
+            <strong>Preview release</strong>
+            <p>ECMAScript 2022 Edit this on Wikidata / 22 July 2021; 2 years ago</p>
+
+            <strong>Typing discipline</strong>
+            <p>Dynamic, weak, duck</p>
+
+            <strong>Filename extensions</strong>
+            <p><code>.js .cjs .mjs</code></p>
+        </div>
+    </div>
+</div>
 
       </div>
-      
-        
-    
-
       </div>
       </div>
     
